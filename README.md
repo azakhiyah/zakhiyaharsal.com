@@ -1,7 +1,7 @@
 # 🏠 zakhiyaharsal.com
 
 
-Welcome to my personal website! This website showcases my experiences in previous projects and my learning path. It is built using Vue.js, ShadCN, and Tailwind CSS.
+Welcome to my personal website! This website showcases my experiences in previous projects and my learning path. It is built using Vue.js.
 
 ## Table of Contents
 
