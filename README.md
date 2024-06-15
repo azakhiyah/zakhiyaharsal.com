@@ -20,14 +20,12 @@ This website serves as a portfolio to highlight my professional journey, includi
 
 - **Project Showcase**: Detailed descriptions and case studies of my previous projects.
 - **Learning Path**: Documentation of the skills and technologies I have learned.
-- **Responsive Design**: Optimized for various devices using Tailwind CSS.
+- **Responsive Design**: Optimized for various devices.
 - **Interactive UI**: Built with Vue.js for a dynamic user experience.
   
 ## 🤖 Technologies Used
 
 - **Vue.js**: A progressive JavaScript framework for building user interfaces.
-- **ShadCN**: A collection of high-quality Vue components styled with Tailwind CSS.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
 ## 📖 Installation
 
@@ -54,15 +52,16 @@ To get a local copy up and running, follow these steps:
    ```
    your-repo-name/
    ├── public/
-   │   ├── index.html
+   │   ├── favicon.ico
    │   └── ...
    ├── src/
    │   ├── assets/
-   │   ├── components/
-   │   ├── views/
+   |       |── base.css
+   |       |── logo.png
+   |       |── main.css
+   |       |── profile.png
    │   ├── App.vue
-   │   ├── main.js
-   │   └── ...
+   │   ├── main.ts
    ├── .gitignore
    ├── package.json
    ├── README.md
@@ -72,10 +71,8 @@ To get a local copy up and running, follow these steps:
 - public/: Contains static assets and the main HTML file.
 - src/: Contains the main application code.
   - assets/: Contains images, fonts, and other static assets.
-  - components/: Contains Vue components used in the application.
-  - views/: Contains view components for different pages.
   - App.vue: The root component.
-  - main.js: The entry point for the application.
+  - main.ts: The entry point for the application.
 
 ## 🤝 Contact
 If you have any questions or want to connect, feel free to reach out:
