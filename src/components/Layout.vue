@@ -6,12 +6,12 @@
       <div class="bar"></div>
     </div>
     <nav v-if="menuOpen" class="nav-menu">
-      <router-link to="/" @click.native="closeMenu">Home</router-link>
-      <router-link to="/about" @click.native="closeMenu">About</router-link>
-      <a href="#">Portfolio</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-      <a href="#">Blog</a>
+      <router-link to="/" @click.native="closeMenu" class="nav-link">Home</router-link>
+      <router-link to="/about" @click.native="closeMenu" class="nav-link">About</router-link>
+      <a href="#" class="nav-link">Portfolio</a>
+      <a href="#" class="nav-link">Services</a>
+      <a href="#" class="nav-link">Contact</a>
+      <a href="#" class="nav-link">Blog</a>
     </nav>
     <router-view />
   </div>
@@ -73,10 +73,17 @@
     flex-direction: column;
   }
   
-  .nav-menu a {
+  .nav-link {
     color: white;
     text-decoration: none;
     padding: 5px 0;
   }
+
+  .nav-link:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
   </style>
   

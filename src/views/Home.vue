@@ -38,6 +38,13 @@ export default defineComponent({
   margin: 0;
 }
 
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .title-container {
   background-color: white;
   color: black;
@@ -50,6 +57,12 @@ export default defineComponent({
   font-size: 4vw;
   font-family: 'Roboto', sans-serif;
   margin: 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-photo {
