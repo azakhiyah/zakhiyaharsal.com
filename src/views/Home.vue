@@ -21,6 +21,17 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -30,12 +41,7 @@ export default defineComponent({
   background-color: black;
   color: white;
   text-align: center;
-}
-
-.name {
-  font-size: 6vw;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .profile {
@@ -43,6 +49,20 @@ export default defineComponent({
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.name {
+  font-size: 4em;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 .title-container {
@@ -54,26 +74,18 @@ export default defineComponent({
 }
 
 .title {
-  font-size: 4vw;
+  font-size: 1.5em;
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
-.text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .profile-photo {
-  width: 40vw;
-  height: 40vw;
-  max-width: 250px;
-  max-height: 250px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 2px solid white;
-  margin-top: 20px;
   object-fit: cover;
   object-position: center top;
+  animation: fadeIn 3s ease-in-out;
 }
 </style>
